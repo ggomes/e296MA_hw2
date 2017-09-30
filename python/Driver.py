@@ -35,7 +35,7 @@ class ChillDriver(Driver):
             return False
 
 
-class AggressiveDriver(Driver):
+class AggressiveDriver(Car):
     def throttle_action(self, car, env):
         if car.current_speed < car.max_speed:
             return car.max_acceleration
