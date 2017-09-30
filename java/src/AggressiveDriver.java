@@ -12,6 +12,7 @@ public class AggressiveDriver extends Driver {
             return 0.5*car.max_acceleration;
           else
              return -0.5*car.max_acceleration;
+    }
     @Override
         
     public boolean stop_for_refueling(Car car, Environment env) {
