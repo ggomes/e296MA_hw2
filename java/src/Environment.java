@@ -1,12 +1,15 @@
 import java.util.List;
+import java.util.ArrayList;
 
 public class Environment {
 
-    public List<Car> cars;
+    public ArrayList<Car> cars;
 
     public Environment() {
-        // this.cars = new ArrayList<>();
+         this.cars = new ArrayList<>();
     }
+
+    public ArrayList getCars() {return cars;}
 
     public double get_next_station_following(double car_position){
         return Float.POSITIVE_INFINITY;
