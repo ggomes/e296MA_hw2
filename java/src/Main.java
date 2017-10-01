@@ -19,6 +19,7 @@ public class Main {
 
         env.cars.add(car1);
         env.cars.add(car2);
+        System.out.println(env.getCars());
 
         System.out.println("Success!");
     }
