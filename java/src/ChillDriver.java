@@ -7,7 +7,7 @@ public class ChillDriver extends Driver {
     @Override
     public double throttle_action(Car car, Environment env) {
 
-        if(car.current_speed<car.max_speed)
+        if(car.current_speed>car.max_speed)
             return 0.5*car.max_acceleration;
         else
             return -0.5*car.max_acceleration;
