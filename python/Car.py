@@ -1,6 +1,6 @@
 class Car:
 
-    def __init__(self,driver, weight, max_speed, max_acceleration):
+    def __init__(self,driver, weight, max_speed=200, max_acceleration=10):
         self.driver = driver
         self.weight = weight
         self.current_speed = 0
