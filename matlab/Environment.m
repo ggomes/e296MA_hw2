@@ -14,6 +14,10 @@ classdef Environment < handle
         	x = inf;
         end
         
+        function add_car(this,carObj)
+            this.cars=[this.cars;repmat(carObj,1,0)]
+        end
+        
     end
 
 end
