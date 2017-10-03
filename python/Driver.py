@@ -9,11 +9,11 @@ class Driver:
         self.weight = weight
 
     @abstractmethod
-    def throttle_action( car,  env):
+    def throttle_action(self, car,  env):
         pass
 
     @abstractmethod
-    def stop_for_refueling( car,  env):
+    def stop_for_refueling(self, car,  env):
         pass
 
 
@@ -25,7 +25,7 @@ class ChillDriver(Driver):
         else:
             return -0.5 * car.max_acceleration
 
-    def stop_for_refueling(car,  env):
+    def stop_for_refueling(self, car,  env):
         next_station = env.get_next_station_following(car.position)
         stop_at = car.position + car.stopping_distance()
 
@@ -35,12 +35,12 @@ class ChillDriver(Driver):
             return False
 
 
-class AggressiveDriver(Car):
+class AggressiveDriver(Driver):
     def throttle_action(self, car, env):
         if car.current_speed < car.max_speed:
             return car.max_acceleration
         else:
             return -car.max_acceleration
 
-    def stop_for_refueling(car, env):
+    def stop_for_refueling(self, car, env):
         return False
