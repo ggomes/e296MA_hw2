@@ -18,7 +18,6 @@ public class Main {
         Environment env = new Environment();
 
         env.cars.add(car1);
-        env.cars.add(car2);
 
         System.out.println("Success!");
     }
