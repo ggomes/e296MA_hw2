@@ -9,4 +9,4 @@ class Car:
         self.position = 0
 
     def stopping_distance(self):
-        return 0.5 * self.current_speed*self.current_speed / self.max_acceleration;
+        return 0.5 * self.current_speed*self.current_speed / self.max_acceleration
