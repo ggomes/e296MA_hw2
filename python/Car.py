@@ -1,5 +1,4 @@
 class Car:
-
     def __init__(self,driver, weight, max_speed, max_acceleration):
         self.driver = driver
         self.weight = weight
