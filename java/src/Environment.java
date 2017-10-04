@@ -1,8 +1,9 @@
 import java.util.List;
+import java.util.ArrayList;
 
 public class Environment {
 
-    public List<Car> cars;
+    public ArrayList<Car> cars;
 
     public Environment() {
         // this.cars = new ArrayList<>();
