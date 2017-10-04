@@ -1,4 +1,4 @@
-public class AggressiveDriver extends Driver {
+public abstract class AggressiveDriver extends Driver {
 
     public AggressiveDriver(String name, double weight) {
         super(name, weight);

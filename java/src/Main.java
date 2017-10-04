@@ -7,10 +7,13 @@ public class Main {
                 800d,
                 40d,
                 5d );
-
-
         Car car2 = new Car(
-                new AggressiveDriver("Ann Merriweather", 160) ,
+                new AggressiveDriver("Ann Merriweather", 160) {
+                    @Override
+                    public double throttle_action(Car car, Environment env) {
+                        return 0;
+                    }
+                },
                 400d,
                 60d,
                 7d );
