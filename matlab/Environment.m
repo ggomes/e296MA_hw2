@@ -14,6 +14,9 @@ classdef Environment < handle
         	x = inf;
         end
         
+        function add_car(list, car)
+            list.cars(end+1) = car;
+        end
     end
 
 end
