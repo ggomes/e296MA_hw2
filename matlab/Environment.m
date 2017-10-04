@@ -14,6 +14,12 @@ classdef Environment < handle
         	x = inf;
         end
         
+        function this= add_car(this, whichcar)
+            this.cars(size(this.cars,2)+1) = whichcar;
+        end
+%         function this = add_car_properties(this,whichcar)
+%             this.cars = whichcar;
+%         end
     end
 
 end
