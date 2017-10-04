@@ -14,6 +14,11 @@ classdef Environment < handle
         	x = inf;
         end
         
+        function [x] = add_car(this,car)
+            x = 0;
+        end
+            
+        
     end
 
 end
