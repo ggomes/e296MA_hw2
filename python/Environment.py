@@ -1,4 +1,4 @@
-class Environment:
+class Environment(object):
 
     def __init__(self):
         self.cars = []
