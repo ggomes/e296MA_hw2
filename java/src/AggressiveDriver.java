@@ -5,6 +5,11 @@ public class AggressiveDriver extends Driver {
     }
 
     @Override
+    public double throttle_action(Car car, Environment env) {
+            return car.max_acceleration;
+        }
+
+    @Override
     public boolean stop_for_refueling(Car car, Environment env) {
         return false;
     }
