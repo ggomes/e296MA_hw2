@@ -6,4 +6,5 @@ public abstract class Driver implements DriverBrain {
         this.name = name;
         this.weight = weight;
     }
+
 }

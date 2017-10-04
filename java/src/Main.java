@@ -3,14 +3,15 @@ public class Main {
     public static void main(String[] args) {
 
         Car car1 = new Car(
-                new ChillDriver("Chris Dunlop", 130) ,
+                new ChillDriver("Chris Dunlop", 130),
                 800d,
                 40d,
                 5d );
 
 
-        Car car2 = new Car(
-                new AggressiveDriver("Ann Merriweather", 160) ,
+        Car car2;
+        car2 = new Car(
+                new AggressiveDriver("Ann Merriweather", 160),
                 400d,
                 60d,
                 7d );
