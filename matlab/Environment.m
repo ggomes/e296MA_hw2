@@ -14,6 +14,8 @@ classdef Environment < handle
         	x = inf;
         end
         
+        function add_car(this,car);
+        end
     end
 
 end
