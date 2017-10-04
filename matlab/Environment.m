@@ -13,7 +13,9 @@ classdef Environment < handle
         function [x] = get_next_station_following(this, car_position)
         	x = inf;
         end
-        
+        function obj= add_car(this, car)
+            
+        end 
     end
 
 end
