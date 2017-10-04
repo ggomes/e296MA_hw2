@@ -14,7 +14,11 @@ public class Main {
                 400d,
                 60d,
                 7d );
+        
+    class AggressiveDriverImp extends AggressiveDriver{
 
+    AggressiveDriver newObject = new AggressiveDriverImp();
+        
         Environment env = new Environment();
 
         env.cars.add(car1);
