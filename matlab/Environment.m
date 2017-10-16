@@ -1,7 +1,7 @@
 classdef Environment < handle
     
     properties
-        cars
+        cars = {};
     end
     
     methods
@@ -12,6 +12,10 @@ classdef Environment < handle
         
         function [x] = get_next_station_following(this, car_position)
         	x = inf;
+        end
+        
+        function add_car(this, newCar)
+            this.cars = [this.cars, newCar]; 
         end
         
     end
